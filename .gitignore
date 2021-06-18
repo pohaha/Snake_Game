@@ -22,3 +22,6 @@ _deps
 
 #ignores build dir
 [Bb][Uu][Ii][Ll][Dd]/
+
+#ignores for scripts
+*.sh
