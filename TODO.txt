@@ -1,1 +1,6 @@
 Мнее нужно разобраться с командами git
+-Git clone
+-Git commit (Опции -a, -m, -am)
+-Git pull
+-Git checkout (Имя ветки ИЛИ id коммита)
+-Git push
