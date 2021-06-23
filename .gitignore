@@ -6,7 +6,7 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-
+.vscode
 #ignores CMake files
 CMakeLists.txt.user
 CMakeCache.txt

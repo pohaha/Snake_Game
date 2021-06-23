@@ -1,8 +1,12 @@
 cmake_minimum_required(VERSION 3.19.7)
 
-project(Classes_With_Counters)
+cmake_minimum_required(VERSION 3.20.3)
 
-add_executable(${PROJECT_NAME} main.cpp)
+set(This Snake_Game)
+
+project(${This} C CXX)
+
+add_executable(${This} main.cpp)
 
 #add_subdirectory(Distribution)
 
