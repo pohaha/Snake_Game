@@ -1,5 +1,6 @@
 #include <iostream>
-#include "test.h"
+#include "test/test.h"
+
 int main()
 {
 //while ci/cd system is running, this is executed
@@ -8,6 +9,6 @@ int main()
 #endif
 //otherwise, the real code is running
 #ifdef BUILD_SESSION
-    std::cout << "Hello Classes With counters" << std::endl;
+    std::cout << "Hello, actual builds" << std::endl;
 #endif
 }

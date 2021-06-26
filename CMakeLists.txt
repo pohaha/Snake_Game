@@ -8,6 +8,9 @@ project(${This} C CXX)
 
 add_executable(${This} main.cpp)
 
+add_subdirectory(test)
+target_link_libraries(${This} test_env)
+
 #add_subdirectory(Distribution)
 
 #target_link_directories(${PROJECT_NAME} PRIVATE Distribution/)
