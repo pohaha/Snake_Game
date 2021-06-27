@@ -16,3 +16,16 @@ jobs:
         run: ./build.sh
       - name: Run Tests
         run: ./run.sh
+   Run_Release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code 
+        uses: actions/checkout@v2
+      - name: Setup CMake
+        uses: jwlawson/actions-setup-cmake@v1.9
+      - name: Configure the build system for tests
+        run: ./configure_release.sh
+      - name: Build Tests
+        run: ./build.sh
+      - name: Run Tests
+        run: ./run.sh
