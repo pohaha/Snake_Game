@@ -19,7 +19,7 @@ jobs:
       - name: Run Tests
         run: ./run.sh
 
-   Run_Release:
+  Run_Release:
 
     name: runs the program itself
     runs-on: ubuntu-latest
