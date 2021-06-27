@@ -1,14 +1,13 @@
 #include <iostream>
-#include "test/test.h"
+#include <Snake_Game_Config.h>
 
 int main()
 {
 //while ci/cd system is running, this is executed
-#ifdef TEST_SESSION
+#ifdef RUN_TESTS
     test(); //run tests
-#endif
-//otherwise, the real code is running
-#ifdef BUILD_SESSION
+#else
+    //otherwise, the real code is running
     std::cout << "Hello, actual builds" << std::endl;
 #endif
 }
