@@ -28,9 +28,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Setup CMake
         uses: jwlawson/actions-setup-cmake@v1.9
-      - name: Configure the build system for tests
+      - name: Configure the build system for release
         run: ./configure_release.sh
-      - name: Build Tests
+      - name: Build Release 
         run: ./build.sh
-      - name: Run Tests
+      - name: Run Release
         run: ./run.sh
