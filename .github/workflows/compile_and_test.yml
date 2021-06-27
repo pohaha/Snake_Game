@@ -4,6 +4,8 @@ on:
   push:
 jobs:
   Run_Tests:
+
+    name: running tests for TDD
     runs-on: ubuntu-latest
     steps:
       - name: checkout code 
@@ -16,7 +18,10 @@ jobs:
         run: ./build.sh
       - name: Run Tests
         run: ./run.sh
+
    Run_Release:
+
+    name: runs the program itself
     runs-on: ubuntu-latest
     steps:
       - name: checkout code 
