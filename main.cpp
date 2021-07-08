@@ -10,5 +10,4 @@ int main()
     //otherwise, the real code is running
     std::cout << "Hello, actual builds" << std::endl;
 #endif
-    some stupid stuff !
 }
