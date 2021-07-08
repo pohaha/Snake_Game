@@ -35,7 +35,7 @@ jobs:
       - name: Run Release
         run: ./run.sh
   
-Run_Release_Windows:
+  Run_Release_Windows:
     name: runs the program itself on windows machine
     runs-on: windows-latest
     steps:
