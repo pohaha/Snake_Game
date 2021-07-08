@@ -51,6 +51,7 @@ if there are some sujjestions regarding the workflow itself PLEASE create a issu
 9. Keep on going from step one!
 
 # Status
+<<<<<<< HEAD
 ### Develop:
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pohaha/Snake_Game/compile_and_test?style=for-the-badge)
 ### Pavel
@@ -62,3 +63,8 @@ https://img.shields.io/github/workflow/status/pohaha/Snake_Game/compile_and_test
 
 Made with [contributors-img](https://contrib.rocks).
 
+=======
+
+## Contributors
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pohaha/Snake_Game/compile_and_test?style=for-the-badge)
+>>>>>>> main
