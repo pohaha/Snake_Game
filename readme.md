@@ -53,8 +53,7 @@ if there are some sujjestions regarding the workflow itself PLEASE create a issu
 # Status
 ### Develop:
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pohaha/Snake_Game/compile_and_test?style=for-the-badge)
-### Pavel
-https://img.shields.io/github/workflow/status/pohaha/Snake_Game/compile_and_test/Pavel?style=for-the-badge
+
 # Contributors
 <a href="https://github.com/pohaha/Snake_Game/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=pohaha/Snake_Game" />
