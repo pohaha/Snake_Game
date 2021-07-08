@@ -19,9 +19,9 @@ jobs:
       - name: Run Tests
         run: ./run.sh
 
-  Run_Release:
+  Run_Release_Linux:
 
-    name: runs the program itself
+    name: runs the program itself on Linux machine
     runs-on: ubuntu-latest
     steps:
       - name: checkout code 
@@ -34,3 +34,19 @@ jobs:
         run: ./build.sh
       - name: Run Release
         run: ./run.sh
+  
+Run_Release_Windows:
+    name: runs the program itself on windows machine
+    runs-on: windows-latest
+    steps:
+      - name: checkout code 
+        uses: actions/checkout@v2
+      - name: Setup CMake
+        uses: jwlawson/actions-setup-cmake@v1.9
+      - name: Configure the build system for release
+        run: ./configure_release.sh
+      - name: Build Release 
+        run: ./build.sh
+      - name: Run Release
+        run: ./run.sh
+  
