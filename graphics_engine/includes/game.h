@@ -8,5 +8,7 @@ public:
     void turn_off();
     Game(/* args */);
     ~Game();
-    static bool test();
+#ifdef RUN_TESTS
+    static void test();
+#endif
 };

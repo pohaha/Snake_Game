@@ -1,3 +1,4 @@
+#include <Graphics_Engine_Config.h>
 #ifndef GAME_SRC
 #define GAME_SRC
 #include <game.h>
@@ -24,9 +25,11 @@ void Game::turn_off()
     game_on = false;
 }
 
+#ifdef RUN_TESTS
 //tests for game class
-bool Game::test()
+void Game::test()
 {
     Game test_game;
     assert(test_game.runs());
 }
+#endif //run_tests
