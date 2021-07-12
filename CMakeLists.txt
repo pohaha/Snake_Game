@@ -9,6 +9,11 @@ configure_file(Snake_Game_Config.h.in Snake_Game_Config.h)
 #added in case of tests being run
 option(RUN_TESTS "run tests for TDD" ON)
 
+#Graphics engine
+add_subdirectory(graphics_engine)
+list(APPEND EXTRA_INCLUDE_DIRECTORIES "${PROJECT_SOURCE_DIR}/graphics_engine/includes")
+list(APPEND EXTRA_LIBRARY_DIRECTORIES "${PROJECT_SOURCE_DIR}/graphics_engine")
+list(APPEND EXTRA_LINKED_SOURCES Graphics_Engine)
 #tests logic
 if(RUN_TESTS)
     add_subdirectory(test)
