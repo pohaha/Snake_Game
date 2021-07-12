@@ -29,7 +29,12 @@ void Game::turn_off()
 //tests for game class
 void Game::test()
 {
-    Game test_game;
-    assert(test_game.runs());
+
+    {
+        Game test_game;
+        assert(test_game.runs());
+        test_game.turn_off();
+        assert(not test_game.runs());
+    }
 }
 #endif //run_tests
