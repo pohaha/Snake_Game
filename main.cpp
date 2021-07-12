@@ -1,5 +1,8 @@
 #include <iostream>
 #include <Snake_Game_Config.h>
+#ifdef RUN_TESTS
+#include <test.h>
+#endif
 #include <game.h>
 
 int main()
